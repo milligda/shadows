@@ -1,12 +1,9 @@
 .welcome-message-container {
-    background-color: #333;
-    border-radius: 10px;
     width: 600px;
     max-width: 98vw;
     margin: 80px auto;
     padding: 20px;
     text-align: center;
-    box-shadow: 2px 2px 8px #777;
 }
 
 .welcome-message-container > p {

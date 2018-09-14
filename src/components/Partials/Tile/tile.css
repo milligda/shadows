@@ -14,5 +14,6 @@
 .tile:hover {
     background-color: #595959;
     box-shadow: 5px 5px 15px #bfbfbf;
-    color: #222222
+    color: #222222;
+    transition: .5s;
 }
