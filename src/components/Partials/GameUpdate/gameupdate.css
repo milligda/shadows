@@ -1,0 +1,12 @@
+.gameupdate-container {
+    margin: 20px 0px;
+    text-align: center;
+    color: #666666;
+}
+
+@media only screen and (max-width: 450px) {
+
+    .gameupdate-container {
+        margin: 40px 0px;
+    }
+}

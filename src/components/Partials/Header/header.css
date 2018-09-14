@@ -1,0 +1,19 @@
+.header-container {
+    position: fixed;
+    width: 250px;
+    top: 10px;
+    left: 10px;
+    z-index: 10;
+}
+
+.header-container > a > h3 {
+    color: #333;
+    text-shadow: 2px 2px 8px #ffffff;
+}
+
+@media only screen and (max-width: 450px) {
+
+    .header-container {
+        width: 150px;
+    }
+}

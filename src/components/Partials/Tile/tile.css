@@ -1,0 +1,18 @@
+.tile {
+    color: #666666;
+    text-align: center;
+    padding: 50px 5px;
+    background-color: #111111;
+    border-radius: 10px;
+    margin: 15px;
+    box-shadow: 5px 5px 10px #737373;
+    cursor: pointer;
+    max-width: 125px;
+    max-height: 125px;
+}
+
+.tile:hover {
+    background-color: #595959;
+    box-shadow: 5px 5px 15px #bfbfbf;
+    color: #222222
+}

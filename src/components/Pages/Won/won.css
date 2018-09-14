@@ -1,0 +1,23 @@
+.won-message-container {
+    background-color: #333;
+    border-radius: 10px;
+    width: 600px;
+    max-width: 98vw;
+    margin: 80px auto;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 2px 2px 8px #777;
+}
+
+.won-message-container h2 {
+    color: #666666;
+}
+
+.won-message-container h4 {
+    color: #666666
+}
+
+.coming-soon-message {
+    margin-top: 40px;
+    font-style: italic;
+}

@@ -1,0 +1,32 @@
+.welcome-message-container {
+    background-color: #333;
+    border-radius: 10px;
+    width: 600px;
+    max-width: 98vw;
+    margin: 80px auto;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 2px 2px 8px #777;
+}
+
+.welcome-message-container > p {
+    font-weight: bold;
+    color: #666;
+    font-size: 1.2rem;
+}
+
+.begin-button {
+    margin: 30px 0px;
+    padding: 5px 10px;
+    background-color: #d2d2d2;
+    border-radius: 10px;
+    color: #333;
+    box-shadow: 0px 0px 5px #999; 
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.begin-button:hover {
+    color: #333;
+    box-shadow: 0px 0px 10px #fff;
+}
