@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Redirect } from "react-router-dom";
 // import GameView from "../Pages/Game";
 import plays from "../../plays.json";
 import GameUpdate from "../Partials/GameUpdate";
@@ -11,6 +12,8 @@ class GameContainer extends Component {
     state={
         steps: 0,
         score: 0,
+        won: false,
+        lost: false,
         lastPlay: "",
         lastStep: "",
         plays: plays
@@ -29,18 +32,33 @@ class GameContainer extends Component {
         const newSteps = this.state.steps + 1;
 
         // update the state
-        this.setState({ plays: revisedPlays, score: newScore, steps: newSteps, lastPlay: points, lastStep: title});
+        this.setState({ 
+            plays: revisedPlays, 
+            score: newScore, 
+            steps: newSteps, 
+            lastPlay: points, 
+            lastStep: title
+        });
 
         if (newScore >= 100) { 
-            window.location.replace("/gameover");
+            this.setState({ lost: true });
         }
 
         if (newSteps === 8 && newScore < 100 ) {
-            window.location.replace("/won");
+            this.setState({ won: true});
         }
     }
 
     render() {
+
+        if (this.state.won) {
+            return <Redirect to="/won" />
+        }
+
+        if (this.state.lost) {
+            return <Redirect to="/gameover" />
+        }
+
         return (
             <div id="game-page" className="page-container">
                 <GameStats 

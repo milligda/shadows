@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter, Route } from "react-router-dom";
 import Header from "./components/Partials/Header";
 import Welcome from "./components/Pages/Welcome";
 import Game from "./components/Containers/GameContainer";
@@ -8,15 +8,15 @@ import Won from "./components/Pages/Won";
 
 
 const App = () => (
-    <Router>
+    <HashRouter>
         <div>
             <Header />
             <Route exact path="/" component={Welcome} />
-            <Route exact path="/play" component={Game} />
-            <Route exact path="/gameover" component={Gameover} />
-            <Route exact path="/won" component={Won} />
+            <Route path="/play" component={Game} />
+            <Route path="/gameover" component={Gameover} />
+            <Route path="/won" component={Won} />
         </div>
-    </Router>
+    </HashRouter>
 );
 
 export default App;

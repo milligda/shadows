@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import "./welcome.css";
 
 const WelcomePage = () => (
@@ -7,7 +9,9 @@ const WelcomePage = () => (
             <p>To cross the Land of Shadows, you must stay hidden.</p>
             <p>Crack the code and choose your steps wisely.</p>
             <p>It takes 8 steps to cross, but if you are fully illuminated along the way, you will be captured...</p>
-            <a className="begin-button" href="/play">Begin Your Journey</a>
+            <Link to="/play">
+                <span className="begin-button">Begin Your Journey</span>
+            </Link>
         </div>
     </div>
 )

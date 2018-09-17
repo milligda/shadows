@@ -1,11 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./header.css";
 
 const Header = () => (
     <div className="header-container">
-        <a href="/">
+        <Link to="/">
             <h3>Land of Shadows</h3>
-        </a>
+        </Link>
+        
     </div>
 )
 
